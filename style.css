@@ -1,0 +1,219 @@
+body{
+    background-color:#E5E5E5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+main{
+    display: flex ;   
+    flex-direction: row;  
+    min-height: 90vh;   
+}
+.titulo{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+main .logo{
+    width: 10vw;
+    border: 2px solid #E5E5E5;
+    display:flex ;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2em;
+  
+}
+
+
+main .input_mensaje {
+    border: 2px solid #E5E5E5;
+    width: 60%;
+    padding-top: 2vh;               /*  distancia del titulo al margen  superior     */
+    display: flex;
+    justify-content: center;
+}
+
+main .input_mensaje .Mensaje_contenedor{
+  
+    width: 80%;
+    
+}
+main .input_mensaje .Mensaje_contenedor textarea {
+    
+    width: 100%;
+    resize: none;
+    background: transparent;
+    font-size: 22px;
+    border:2px solid black;  
+    height: 50vh;                 /*  superficie que abarca textarea  */
+    
+   
+  
+}
+main .input_mensaje .bottom{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    padding-top: 1em;
+
+}
+
+main .Resultado_mensaje  {               /*   contenedor derecho   */
+    border: 2px solid #E5E5E5;
+    width: 25%;
+   
+    align-items: center;
+    justify-content: center;
+   
+    background: #E5E5E5;
+
+    text-align: center;
+
+}
+
+main .buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    
+}
+
+.button:hover{                    /*  cuando posicionamos mouse en los 3 botones */
+	color: #c78c19;
+	font-size: 17px;
+	text-decoration: underline;
+    font-weight: 700;       /*  aumento el grosor de la letra */
+	}
+
+main .button{                      /*  afecta a los 2 botones  */
+
+    padding: .75em;
+    width: 80%;
+    border-radius: 1em;
+    border: 2px solid #0A3871;
+    cursor:pointer;                   /*  agrega la manito  */
+}
+
+#copiar{                         /*  afecta a boton copiar  */
+    padding: .75em;
+    width: 80%;
+    border-radius: 1em;
+    border: 2px solid #0A3871;
+    cursor:pointer;                /*  agrega la manito  */
+    display: none;
+    
+}
+
+#copiar:hover{                /*  cuando posicionamos mouse en copiar */
+    color: #c78c19;
+    font-size: 17px;
+    font-weight: 700;       /*  aumento el grosor de la letra */
+    text-decoration: underline;
+}
+
+
+
+#texto2{                       
+                                                   
+    text-align: center;               /*  texto que desencripta para copiar  */
+    background: #E5E5E5;
+}
+
+#texto{
+    
+    text-align: center;
+}
+
+main .bot_encriptar{
+    background-color: #0A3871;
+    color: #FFFF;
+    font-weight: 500;
+
+}
+
+main .bot_desencriptar{
+    background-color:transparent ;
+    color: #0A3871;
+    font-weight: 500;
+    
+}
+
+
+footer{
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    background:#E5E5E5;
+}
+
+@media screen and (max-width:480px)
+
+{
+   
+    main .logo{          
+       
+        width:5pw;
+        padding-left: 3px;
+       
+    }
+/*.........................  el area izquierda.............................  */
+     .titulo{           /*  disminuyo tamaño del titulo*/
+        font-size: 16px; 
+    }
+
+    #InputTexto{
+        font-size: 14px; 
+    }
+
+    main .input_mensaje {             
+        width: 60%;
+    }
+    #info{                      
+        font-size: 10px;
+    }
+
+    main .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        font-size: 12px;
+
+    }
+    
+/*.........................  el area derecha.............................  */
+
+
+    main .Resultado_mensaje{
+        
+        width: 40%;
+        padding-top: 90px;
+        
+    }
+    #texto {
+
+        font-size: 12px;
+       
+    }
+    
+    
+    #texto2 {
+
+        width: 90%;
+        align-items: center;
+        font-size: 10px;
+        
+    }
+
+    #imgmuneco {
+       
+    width: 100%;
+        
+    }
+   
+
+
+
+}

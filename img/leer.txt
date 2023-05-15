@@ -1,0 +1,1 @@
+img/logo.png     // carpeta img archivo logo.png

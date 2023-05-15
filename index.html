@@ -1,0 +1,62 @@
+<!DOCTYPE html>  
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta http-equiv="X-UA-compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>challenge Schumacher Sergio v0.1.0</title> 
+		<link rel="stylesheet" href="normalize.css">  
+		<link rel="stylesheet" href="style.css">  
+		<script src="sweetalert2.all.min.js"></script>
+		<script type="text/javascript" src="Script.Js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+		
+	</head>
+
+	<body>
+		
+		<main>
+			
+			<div class = "logo"> 
+				<img class="Logoimg" src="img/Logo.png" alt="Logo Alura">	
+			</div>
+		 	
+		 	<div class ="input_mensaje">
+				
+                <div class="Mensaje_contenedor">
+					<h1 class="titulo" >Encriptador y Desencriptador de mensajes</h1>
+					<textarea  autofocus id="InputTexto" name="" cols="80" rows="4" placeholder="Ingrese el texto aqui"></textarea>
+
+                    <div class="bottom">
+                        <small style="text-align: center" id="info" ><img src="img/Vector.png"> Solo letras minusculas y sin acento</small>
+                        <div class="buttons">
+                            <button  type ="button" class="button bot_encriptar" onclick="encriptar();foco()"> Encriptar</button>  
+                            <button  type ="button" class="button bot_desencriptar" onclick="desencriptar();foco()"> Desencriptar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+		 	</div>
+				
+			<div class ="Resultado_mensaje">
+                <div class="resultado">
+					<img src="img/Muneco.png" id="imgmuneco" alt="No encontado">
+						
+					<h2 id="texto">Ningun mensaje fue encontrado</h2>
+					<textarea readonly id="texto2" name="name" cols="38" rows="8">Ingrese el texto que desea encriptar o desencriptar</textarea>
+                    
+					<div class="bot_copiar"> 
+                        <button type ="button" id="copiar"  onclick="copy();foco()">Copiar </button> 
+					 </div>
+					
+				</div>   
+					
+			</div>
+   
+		</main>
+
+		<footer> <p> <strong>por: Schumacher Sergio </strong> - Schumisergio@gmail.com </p></footer>
+	</body>
+	
+</html>
